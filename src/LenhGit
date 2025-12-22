@@ -1,0 +1,28 @@
+//Kiểm tra đang có gì
+git status
+// add tất cả
+git add .
+//kiểm tra lại
+git status
+// commit toàn bộ
+git commit -m "ghi note lại"
+// push lên github
+git push -u origin main(hoặc master)
+
+
+
+---------------------------------
+thêm project từ máy lên git
+1. tạo một respon trên git -> copy link nó
+2. chọn manages remoter project
+3. nhập link respon vừa tạo lúc nảy
+4. đăng nhập vào git bằng ttđn hoặc token
+5. okeeeeeeee
+----------------------------------
+clone project về máy bằng terminal
+1. copy link project trên git
+2. mở terminal
+3 di chuyển đến thư mục muốn lưu
+   ví dụ: cd ~/D:/gì đó
+4. dùng lệnh: git clone 'link repo nảy copy'
+5. vào project: cd my-project
