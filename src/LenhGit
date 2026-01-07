@@ -8,10 +8,10 @@ git status
 git commit -m "ghi note lại"
 // push lên github
 git push -u origin main(hoặc master)
-
-
-
 ---------------------------------
+
+
+
 thêm project từ máy lên git
 1. tạo một respon trên git -> copy link nó
 2. chọn manages remoter project
@@ -19,6 +19,8 @@ thêm project từ máy lên git
 4. đăng nhập vào git bằng ttđn hoặc token
 5. okeeeeeeee
 ----------------------------------
+
+
 clone project về máy bằng terminal
 1. copy link project trên git
 2. mở terminal
@@ -26,3 +28,36 @@ clone project về máy bằng terminal
    ví dụ: cd ~/D:/gì đó
 4. dùng lệnh: git clone 'link repo nảy copy'
 5. vào project: cd my-project
+-------------------------------------------------
+
+
+Pull code về
+C1: PULL CƠ BẢN (PHỔ BIẾN NHẤT): Kéo code từ remote + branch hiện tại. Dùng hằng ngày
+    git pull
+
+C2: PULL RÕ REMOTE + BRANCH (KHUYÊN DÙNG): Tránh nhầm branch. Rất rõ ràng cho người mới
+    git pull origin main   //hoặc thay main bằng master
+
+C3: PULL KHI CÓ CODE LOCAL (STASH): Giữ code local + Không tạo commit rác
+    git stash
+    git pull
+    git stash pop
+
+C4: PULL SAU KHI COMMIT CODE LOCAL: an toàn chuẩn teamwork
+    git add .
+    git commit -m "save local"
+    git pull
+
+C5: PULL GHI ĐÈ CODE LOCAL (NGUY HIỂM ⚠️): code local bị xoá thay haonf toàn code mới
+    git fetch origin
+    git reset --hard origin/main
+
+C6: PULL 1 BRANCH KHÁC
+    git pull origin feature-login
+
+C7: FETCH + MERGE (KIỂM SOÁT TỐT)
+    git fetch
+    git merge origin/main
+
+C8. PULL CÓ REBASE
+    git pull --rebase
